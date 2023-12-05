@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    text-decoration: none;
+    display: inline-block ;
+}
+:root{
+    --color-131921:#131921;
+    --border-color:grey;
+    --search-icon:#febd69;
+    --form-bg: #f5f5f7;;
+    --navbar-color:#232f3e;
+}
+/*header start here*/
+.header-top{
+    background-color: var(--color-131921);
+    border-bottom:0.05rem solid var(--border-color);
+}
+.header-upper{
+    background-color: var(--color-131921);
+}
+.input-group-text{
+    background-color: var(--search-icon);
+    border-radius: 0.2rem;
+}
+.form-control:focus{
+    border: inherit;
+}
+.gap-10{
+    gap: 1rem;
+}
+.gap-15{
+    gap:1rem;
+}
+.gap-25{
+    gap:4rem;
+}
+.header-down{
+    background-color: var(--navbar-color);
+}
+.menu-links{
+    text-transform: uppercase;
+    margin: 1rem;
+    font-size: 0.8rem;
+    
+}
+.dropdown-toggle{
+    text-transform: uppercase;
+    border: none;
+    font-size: 0.8rem;
+}
+.dropdown-menu{
+    background-color: var(--color-131921);
+}
+.dropdown-item:hover{
+    background:transparent;
+}
+/*footer*/
+.container-main{
+    background-color: var(--navbar-color);
+}
+.footer-upper, .footer-middle{
+    border-bottom: 1px solid var(--border-color);
+}
+.footer-links,.col-3 a{
+    display: flex;
+    flex-direction: column;
+   margin: 1rem;
+}
+.footer-links a,.col-3 a {
+    color: white;
+    margin: .5rem;
+}
+.col-3 h3, .col-3 , .col-3 a{
+    color: white;
+}
+.col-3 a{
+    margin-left: 0;
+}
+/*footer ends*/
+/*home-page*/
+.btn{
+    border-radius: 1rem;
+}
+
+/*login-form*/
+.log-form{
+    background-color: var(--form-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.login-form{
+    border-radius: 1rem;
+    box-shadow: inset;
+    background-color: white;
+    width: 30%;
+}
+.form-control{
+    background-color:var(--form-bg);
+    width: 100%;
+}
+.login-form h3{
+    color: rgb(90, 87, 87);
+    text-align: center;
+    padding: 1rem;
+}
+.small-banner{
+    width: 49%;
+}
