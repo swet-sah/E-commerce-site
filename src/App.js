@@ -15,6 +15,7 @@ import Product from './pages/Products/Product';
 import Error from './pages/Error';
 import Cartpage from './pages/Cart/Cartpage';
 import AddtoCart from './pages/Cart/AddtoCart';
+import Compare from './pages/Compare';
 const App = () => {
     return (
         <div>
@@ -29,6 +30,7 @@ const App = () => {
                         <Route path='/singleproduct/:id' element={<Singlepage />} />
                         <Route index element={<Home />} />
                     </Route>
+                    <Route path='compare-product' element={<Compare />} />
                     <Route path='*' element={<Error />} />
                 </Routes>
             </BrowserRouter>

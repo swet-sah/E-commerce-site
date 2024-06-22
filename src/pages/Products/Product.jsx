@@ -60,8 +60,19 @@ const Product = () => {
                         </div>
                         {
                             (data.length) ? (data.map((ele) => {
-                                if (gridView === true) return <GridView image={ele.image} id={ele.id} />
-                                else return <ListView image={ele.image} id={ele.id} />
+                                if (gridView === true) return <GridView
+                                    image={ele.image}
+                                    id={ele.id}
+                                    name={ele.name}
+                                    price={ele.price}
+                                    description={ele.description} />
+                                else return <ListView
+                                    image={ele.image}
+                                    id={ele.id}
+                                    name={ele.name}
+                                    price={ele.price}
+                                    description={ele.description}
+                                />
                             })) : (<Loading />)
                         }
 
